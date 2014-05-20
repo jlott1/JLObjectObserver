@@ -60,7 +60,6 @@ SOFTWARE.
     self.observerBlock = block;
     for(NSString* keyPath in _keyPaths)
     {
-        //    [self addObserver:self forKeyPath:@"contentOffset" options:NSKeyValueObservingOptionNew context:nil];
         [self.object addObserver:self forKeyPath:keyPath options:NSKeyValueObservingOptionNew context:nil];
     }
 }
